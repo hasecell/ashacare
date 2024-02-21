@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="structure.css">
+    <link rel="stylesheet" href="slider.css">
+    <title>ASHACARE | Tips</title>
+
+</head>
+<body>
+             <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+            <a href="index.html" class="w3-bar-item w3-button">ASHACARE</a>
+             <!-- Right-sided navbar links. Hide them on small screens -->
+            <div class="w3-right w3-hide-small">
+                <a href="category.html" class="w3-bar-item w3-button">Category</a>
+                <a href="about.html" class="w3-bar-item w3-button">About</a>
+                <a href="tips.html" class="w3-bar-item w3-button">Tips</a>
+                <a href="review.html" class="w3-bar-item w3-button">Review</a>
+                <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+            </div>
+        </div>
+    </div>
+
+            <!--Content-->
+    <div id="content">
+    	<div id = "sliding">
+		<div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/xZRsET_MUEg?si=qgnTNk21tGd6iTve" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allow" id="gambar"></iframe>
+              <div class="text3">Tips</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/rviBsAVeSHo?si=7LC2ZVJSLy6wPyBh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allow" id="gambar"></iframe>
+              <div class="text3">Tips</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/gGmgWloAPvw?si=YjS4PKJqm1LNm40y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allow" id="gambar"></iframe>
+              <div class="text3">Tips</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/osVPCdNa4eU?si=UeOgtBwhsz1zhjtz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allow" id="gambar"></iframe>
+              <div class="text3">Tips</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/nNJQvT_tnX8?si=8_8Rds8JSK_uY6rb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allow" id="gambar"></iframe>
+              <div class="text3">Tips</div>
+            </div>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div>
+            
+            
+            <script>
+            var slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+            </script>
+</div>
+</div>
+
+            <!-- Footer -->
+            <footer class="w3-center w3-light-grey w3-padding-32">
+                <p class="w3-hover-text-green">FOR EDUCATIONAL PURPOSE ONLY &copy; UNA 24</a></p>
+            </footer>
+        </body>
+        </html>
